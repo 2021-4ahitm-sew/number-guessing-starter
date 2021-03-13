@@ -1,0 +1,5 @@
+<mat-card>
+  <h1>Number Guessing</h1>
+  <app-guess-input (guessEvent)="handleGuess($event)" (resetEvent)="reset()"></app-guess-input>
+  <app-guess-attempt [attempt]="attempt" *ngFor="let attempt of attempts.reverse()"></app-guess-attempt>
+</mat-card>
